@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import iView from 'iview'
-import 'iview/dist/styles/iview.css'    // 使用 CSS
+import 'iview/dist/styles/iview.css' // use CSS
 import 'animate.css'
 import VueI18n from 'vue-i18n'
 import localeMessage from '../../src/common/js/locale'
@@ -27,7 +27,7 @@ const i18n = new VueI18n({
 
 let appEl = window.document.getElementById('app')
 
-new Vue({       // eslint-disable-line no-new
+new Vue({ // eslint-disable-line no-new
   i18n,
   el: appEl,
   render: h => h(App)

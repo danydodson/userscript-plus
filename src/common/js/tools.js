@@ -46,7 +46,7 @@ export default {
       }
     })
   },
-  // 获取油猴缓存好的脚本数据
+  // Get the script data of the oily monkey cache
   getData(callback) {
     let data = sessionStorage.getItem(config.cacheKey)
     if (data) {

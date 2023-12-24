@@ -1,15 +1,15 @@
 {
-  "name": "show-site-all-userjs",
+  "name": "userscript-plus",
   "version": "2.0.0",
   "description": "Show current site all UserJS, The easier way to install UserJs for Tampermonkey.",
   "scripts": {
-    "build": "webpack --config=build/webpack.config.js && webpack --config=build/webpack.gf.config.js  && node build/userscript.js",
+    "build": "webpack --config=build/webpack.config.js && webpack --config=build/webpack.gf.config.js && node build/userscript.js",
     "watch:ui": "webpack --watch --config=build/webpack.config.js",
     "standard": "standard --plugin html 'src/**/*.{js,vue}' --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jae-jae/Show-Site-All-UserJS.git"
+    "url": "git+https://github.com/jae-jae/userscript-plus.git"
   },
   "keywords": [
     "userjs",
@@ -18,9 +18,9 @@
   "author": "Jaeger <JaegerCode@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jae-jae/Show-Site-All-UserJS/issues"
+    "url": "https://github.com/danydodson/userscript-plus/issues"
   },
-  "homepage": "https://github.com/jae-jae/Show-Site-All-UserJS#readme",
+  "homepage": "https://github.com/danydodson/userscript-plus#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

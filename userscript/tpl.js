@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         Userscript+ : Show Site All UserJS
-// @name:zh      Userscript+ : 显示当前网站所有可用的UserJS脚本 Jaeger
-// @name:zh-CN   Userscript+ : 显示当前网站所有可用的UserJS脚本 Jaeger
-// @name:zh-TW   Userscript+ : 顯示當前網站所有可用的UserJS腳本 Jaeger
-// @name:ja   Userscript +：現在のサイトの利用可能なすべてのUserJSスクリプトを表示するJaeger
-// @name:ru-RU   Userscript+ : Показать пользовательские скрипты (UserJS) для сайта. Jaeger
-// @name:ru   Userscript+ : Показать пользовательские скрипты (UserJS) для сайта. Jaeger
+// @name         Userscript+: Show Site All UserJS
+// @name:zh      Userscript+: 显示当前网站所有可用的UserJS脚本 Jaeger
+// @name:zh-CN   Userscript+: 显示当前网站所有可用的UserJS脚本 Jaeger
+// @name:zh-TW   Userscript+: 顯示當前網站所有可用的UserJS腳本 Jaeger
+// @name:ja   Userscript+：現在のサイトの利用可能なすべてのUserJSスクリプトを表示するJaeger
+// @name:ru-RU   Userscript+: Показать пользовательские скрипты (UserJS) для сайта. Jaeger
+// @name:ru   Userscript+: Показать пользовательские скрипты (UserJS) для сайта. Jaeger
 // @namespace    https://github.com/jae-jae/Userscript-Plus
 // @version      2.4.0
-// @description         Show current site all UserJS，The easier way to install UserJs for Tampermonkey.
+// @description   Show current site all UserJS，The easier way to install UserJs for Tampermonkey.
 // @description:zh      显示当前网站的所有可用UserJS(Tampermonkey)脚本,交流QQ群:104267383
 // @description:zh-CN   显示当前网站的所有可用UserJS(Tampermonkey)脚本,交流QQ群:104267383
 // @description:zh-TW   顯示當前網站的所有可用UserJS(Tampermonkey)腳本,交流QQ群:104267383

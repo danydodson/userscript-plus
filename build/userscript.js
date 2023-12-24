@@ -39,5 +39,5 @@ var ljs_GF = `// @require      https://greasyfork.org/scripts/23419-l-js/code/lj
 
 
 renderOut('./dist/show-site-all-userjs.user.js', ljs)
-//greasyfork version
+// greasyfork version
 renderOut('./dist/show-site-all-userjs.gf.user.js', ljs_GF)

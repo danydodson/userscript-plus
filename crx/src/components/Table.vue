@@ -4,7 +4,7 @@
       <div>
         <Card :padding="0">
           <div slot="title" class="card-title">
-            <!--<span>发现 <Badge :count="count"></Badge> 个脚本适用于当前页面</span>-->
+            <!--<span>Discover <Badge :count="count"></Badge> A script is suitable for the current page</span>-->
             <span v-if="!showSearchInput">
               <i18n path="table.tips" tag="span">
                 <Badge place="count" :count="count" style="padding:0px 5px;"></Badge>
@@ -124,7 +124,7 @@ export default {
       titleIcon: 'chevron-up',
       count: 0,
       showDonate: false,
-      // 表头
+      // Head
       columns: [{
         type: 'expand',
         width: 50,
@@ -221,7 +221,7 @@ export default {
         }
       }
       ],
-      // 表格数据
+      // Table datae data
       originData: [],
       data: []
     }
