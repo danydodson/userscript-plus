@@ -70,7 +70,7 @@ export default {
 
   getCount () {
     let count = sessionStorage.getItem(config.countKey)
-    return count >= 50 ? 50 : count
+    return count >= 75 ? 75 : count
   },
 
   searcher (data, query) {
