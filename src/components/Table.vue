@@ -5,7 +5,7 @@
         <Card :padding="0">
           <div slot="title" class="card-title">
             <Icon :type="titleIcon"></Icon>
-            <!--<span>Discover <Badge :count="count"></Badge> A script is suitable for the current page</span>-->
+            <!-- <span>Discover <Badge :count="count"></Badge> A script is suitable for the current page</span> -->
             <span v-if="!showSearchInput" @click="bodySwitch">
               <i18n path="table.tips" tag="span">
                 <Badge place="count" :count="count" style="padding:0px 5px;"></Badge>
@@ -75,7 +75,7 @@
 
           <Tabs value="wechat">
 
-            <Tab-Pane :label="$t('table.wechat')" name="wechat">
+            <!-- <Tab-Pane :label="$t('table.wechat')" name="wechat">
               <div style="text-align: center;">
                 <img width="200px" src="https://ww1.sinaimg.cn/large/7de3675bly1fizyy2pivwj2074074js6.jpg">
               </div>
@@ -85,7 +85,7 @@
               <div style="text-align: center;">
                 <img width="200px" src="https://ww1.sinaimg.cn/large/7de3675bly1fizyyh7m7yj20ci0ciwfl.jpg">
               </div>
-            </Tab-Pane>
+            </Tab-Pane> -->
 
             <Tab-Pane :label="$t('table.paypal')" name="paypal">
               <div style="text-align: center;">

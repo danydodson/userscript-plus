@@ -51,7 +51,7 @@ function changeBadge(data) {
   getCurrentTabUrl(function (url) {
     let host = getUrlHost(url)
     let count = data[host]
-    count = count > 75 ? 75 : count
+    count = count > 50 ? 50 : count
     sessionStorage.setItem('host', host)
     if (count) {
       chrome.browserAction.setBadgeText({

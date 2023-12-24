@@ -66,7 +66,7 @@
 
           <Tabs value="wechat">
 
-            <Tab-Pane :label="$t('table.wechat')" name="wechat">
+            <!-- <Tab-Pane :label="$t('table.wechat')" name="wechat">
               <div style="text-align: center;">
                 <img width="200px" src="https://ww1.sinaimg.cn/large/7de3675bly1fizyy2pivwj2074074js6.jpg">
               </div>
@@ -76,7 +76,7 @@
               <div style="text-align: center;">
                 <img width="200px" src="https://ww1.sinaimg.cn/large/7de3675bly1fizyyh7m7yj20ci0ciwfl.jpg">
               </div>
-            </Tab-Pane>
+            </Tab-Pane> -->
 
             <Tab-Pane :label="$t('table.paypal')" name="paypal">
               <div style="text-align: center;">
@@ -251,7 +251,7 @@ export default {
   },
   methods: {
     getData (callback) {
-      let host = 'baidu.com'
+      let host = 'github.com'
       window.fetch(`https://greasyfork.org/zh-CN/scripts/by-site/${host}.json`)
         .then((r) => {
           r.json().then((json) => {

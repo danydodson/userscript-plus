@@ -38,10 +38,10 @@ var ljs = `
 var ljs_GF = `
 // @require               https://greasyfork.org/scripts/23419-l-js/code/ljs.js
 // @require               https://greasyfork.org/scripts/430303-l-lib2-js/code/l-lib2js.js
-// @resource              uiJs https://cdn.jsdelivr.net/gh/danydodson/Userscript-Plus/dist/ui.gf.js?_=${time}
+// @resource              uiJs https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.gf.js?_=${time}
 `
 
 
-renderOut('./dist/show-site-all-userjs.user.js', ljs)
+renderOut('./dist/userscript-plus.user.js', ljs)
 // greasyfork version
-renderOut('./dist/show-site-all-userjs.gf.user.js', ljs_GF)
+renderOut('./dist/userscript-plus.gf.user.js', ljs_GF)

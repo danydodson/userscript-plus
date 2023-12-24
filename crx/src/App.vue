@@ -17,7 +17,7 @@ export default {
 <style>
 body {
   width: 800px;
-  height: 492px;
+  height: 510px;
   overflow-x: hidden;
 }
 
