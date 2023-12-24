@@ -29,19 +29,15 @@ var renderOut = function (outFile, ljs) {
 
 var time = (+new Date())
 
-var ljs = `
-// @require               https://cdn.jsdelivr.net/gh/danydodson/l.js/userjs/l.userjs.min.js
+var ljs = `// @require               https://cdn.jsdelivr.net/gh/danydodson/l.js/userjs/l.userjs.min.js
 // @require               https://cdn.jsdelivr.net/gh/danydodson/l.js@master/lib.js
-// @resource              uiJs https://cdn.jsdelivr.net/gh/danydodson/Userscript-Plus/dist/ui.js?_=${time}
-`
+// @resource              uiJs   https://cdn.jsdelivr.net/gh/danydodson/Userscript-Plus/dist/ui.js?_=${time}`
 
-var ljs_GF = `
-// @require               https://greasyfork.org/scripts/23419-l-js/code/ljs.js
+var ljs_GF = `// @require               https://greasyfork.org/scripts/23419-l-js/code/ljs.js
 // @require               https://greasyfork.org/scripts/430303-l-lib2-js/code/l-lib2js.js
-// @resource              uiJs https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.gf.js?_=${time}
-`
+// @resource              uiJs   https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.gf.js?_=${time}`
 
 
-renderOut('./dist/userscript-plus.user.js', ljs)
+renderOut('./dist/show-site-all-userjs.user.js', ljs)
 // greasyfork version
-renderOut('./dist/userscript-plus.gf.user.js', ljs_GF)
+renderOut('./dist/show-site-all-userjs.gf.user.js', ljs_GF)

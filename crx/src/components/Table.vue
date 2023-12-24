@@ -34,7 +34,7 @@
               </Tooltip>
 
               <Tooltip v-if="!isZH" content="GreasyFork" placement="bottom">
-                <Button type="dashed" @click="open('https://greasyfork.org/zh-CN/scripts/24508')">
+                <Button type="dashed" @click="open('https://greasyfork.org/en/scripts/482999')">
                   <Icon type="fork"></Icon>
                 </Button>
               </Tooltip>
@@ -44,12 +44,6 @@
                   <Icon type="social-github"></Icon>
                 </Button>
               </Tooltip>
-
-              <Tooltip :content="$t('table.donate')" placement="bottom">
-                <Button type="dashed" @click="showDonate = true">
-                  <Icon type="card"></Icon>
-                </Button>
-              </Tooltip>
             </span>
 
           </div>
@@ -57,42 +51,11 @@
             <div>
               <Table highlight-row :columns="columns" :data="data"></Table>
               <div class="table-footer">
-                <Support />
+                <!-- <Support /> -->
               </div>
             </div>
           </transition>
         </Card>
-        <Modal v-model="showDonate" width="400">
-
-          <Tabs value="wechat">
-
-            <!-- <Tab-Pane :label="$t('table.wechat')" name="wechat">
-              <div style="text-align: center;">
-                <img width="200px" src="https://ww1.sinaimg.cn/large/7de3675bly1fizyy2pivwj2074074js6.jpg">
-              </div>
-            </Tab-Pane>
-
-            <Tab-Pane :label="$t('table.alipay')" name="alipay">
-              <div style="text-align: center;">
-                <img width="200px" src="https://ww1.sinaimg.cn/large/7de3675bly1fizyyh7m7yj20ci0ciwfl.jpg">
-              </div>
-            </Tab-Pane> -->
-
-            <Tab-Pane :label="$t('table.paypal')" name="paypal">
-              <div style="text-align: center;">
-                <a href="https://paypal.me/danydodson/10" target="_blank">
-                  <img src="https://ww1.sinaimg.cn/large/7de3675bly1fizzsw92owj207s03s748.jpg">
-                </a>
-              </div>
-            </Tab-Pane>
-
-          </Tabs>
-
-          <div slot="footer">
-            <Button type="info" size="large" long @click="showDonate = false">{{ $t('table.closeDonate') }}</Button>
-          </div>
-
-        </Modal>
       </div>
     </transition>
 
@@ -221,7 +184,7 @@ export default {
         }
       }
       ],
-      // Table datae data
+      // Table data data
       originData: [],
       data: []
     }
@@ -251,8 +214,8 @@ export default {
   },
   methods: {
     getData (callback) {
-      let host = 'github.com'
-      window.fetch(`https://greasyfork.org/zh-CN/scripts/by-site/${host}.json`)
+      let host = 'google.com'
+      window.fetch(`https://greasyfork.org/en/scripts/by-site/${host}.json`)
         .then((r) => {
           r.json().then((json) => {
             callback(json)

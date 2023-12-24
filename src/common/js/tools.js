@@ -13,23 +13,25 @@ let config = {
 }
 
 export default {
-  timeagoFormat (time) {
+  timeagoFormat(time) {
     let lang = (navigator.language === 'zh-CN') ? 'zh_CN' : 'en_short'
     return timeago(null, lang).format(time)
   },
-  installUserJs (uri) {
+  installUserJs(uri) {
+    // const event = new Event('click', true, true)
     let evt = parent.document.createEvent('MouseEvents')
+    // evt.dispatchEvent(event)
     evt.initEvent('click', true, true)
     let link = parent.document.createElement('a')
     link.href = uri
     // link.click()
     link.dispatchEvent(evt)
   },
-  dispatchEvent (eventName) {
+  dispatchEvent(eventName) {
     parent.document.getElementById('jae_userscript_box').dispatchEvent(new Event(eventName))
   },
   /* Nano Templates - https://github.com/trix/nano */
-  nano (template, data) {
+  nano(template, data) {
     return template.replace(/\{([\w.]*)\}/g, function (str, key) {
       let keys = key.split('.')
       let v = data[keys.shift()]
@@ -37,7 +39,7 @@ export default {
       return (typeof v !== 'undefined' && v !== null) ? v : ''
     })
   },
-  getJSON (url, callback) {
+  getJSON(url, callback) {
     parent.window.GmAjax({
       method: 'GET',
       url: url,
@@ -48,7 +50,7 @@ export default {
     })
   },
   // Get the script data of the oily monkey cache
-  getData (callback) {
+  getData(callback) {
     let data = sessionStorage.getItem(config.cacheKey)
     if (data) {
       data = JSON.parse(data)
@@ -68,12 +70,12 @@ export default {
     }
   },
 
-  getCount () {
+  getCount() {
     let count = sessionStorage.getItem(config.countKey)
     return count >= 50 ? 50 : count
   },
 
-  searcher (data, query) {
+  searcher(data, query) {
     let rt = []
     for (let i = 0; i < data.length; i++) {
       let item = data[i]
@@ -100,11 +102,11 @@ export default {
     return rt
   },
 
-  isZH () {
+  isZH() {
     let nlang = navigator.language.toLowerCase()
-    if (nlang === 'zh') {
-      nlang = 'zh-cn'
+    if (nlang === 'en') {
+      nlang = 'en'
     }
-    return nlang.search('zh-') === 0
+    return nlang.search('en') === 0
   }
 }

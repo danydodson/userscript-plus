@@ -9,7 +9,7 @@ let config = {
 
 export default {
   timeagoFormat (time) {
-    let lang = (navigator.language === 'zh-CN') ? 'zh_CN' : 'en_short'
+    let lang = (navigator.language === 'en') ? 'en' : 'en_short'
     return timeago(null, lang).format(time)
   },
   installUserJs (uri) {
@@ -122,9 +122,9 @@ export default {
 
   isZH () {
     let nlang = navigator.language.toLowerCase()
-    if (nlang === 'zh') {
-      nlang = 'zh-cn'
+    if (nlang === 'en') {
+      nlang = 'en'
     }
-    return nlang.search('zh-') === 0
+    return nlang.search('en-') === 0
   }
 }

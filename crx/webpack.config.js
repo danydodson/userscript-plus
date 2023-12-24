@@ -35,8 +35,8 @@ module.exports = {
     ]
   },
   watchOptions: {
-    poll: 1000, // Monitoring time(ms)
-    aggregateTimeout: 500, // Prevent repeat keys, calculate the key once within 500 mm
+    poll: 1000,
+    aggregateTimeout: 500,
     ignored: /node_modules/,
   },
   plugins: [

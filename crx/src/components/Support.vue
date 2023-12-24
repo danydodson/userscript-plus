@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     getData () {
-      let api = 'https://gist.githubusercontent.com/jae-jae/addb107b30b12b5d54d2f062bf46e80d/raw/support-userscript-plus.json'
+      let api = 'https://gist.githubusercontent.com/danydodson/e024f8867c2ab5c9648816be22a84189/raw/b4c299857e9febeb01f7c9740a9a63ca5c03d9ad/support-userscript-plus.json'
       window.fetch(api)
         .then((r) => {
           return r.json()

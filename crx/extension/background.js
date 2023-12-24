@@ -55,7 +55,9 @@ function changeBadge(data) {
     sessionStorage.setItem('host', host)
     if (count) {
       chrome.browserAction.setBadgeText({
-        text: count.toString()
+        // text: count.toString()
+        // hides count badge
+        text: ''
       })
     } else {
       chrome.browserAction.setBadgeText({

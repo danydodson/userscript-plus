@@ -6,19 +6,17 @@ import 'animate.css'
 import VueI18n from 'vue-i18n'
 import localeMessage from '../../src/common/js/locale'
 
-Vue.locale = (locale) => {
-
-}
+Vue.locale = (locale) => {}
 
 Vue.use(VueI18n)
 
 Vue.use(iView)
 
 let nlang = navigator.language.toLowerCase()
-if (nlang === 'zh') {
-  nlang = 'zh-cn'
+if (nlang === 'en') {
+  nlang = 'en'
 }
-let lang = localeMessage[nlang] ? nlang : 'en-us'
+let lang = localeMessage[nlang] ? nlang : 'en'
 
 const i18n = new VueI18n({
   locale: lang,

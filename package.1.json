@@ -1,17 +1,17 @@
 {
   "name": "userscript-plus",
   "version": "2.0.0",
-  "description": "Show current site all UserJS. The easier way to install UserJs for Tampermonkey.",
+  "description": "Show current site all UserJS, The easier way to install UserJs for Tampermonkey.",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
+    "build": "webpack --config=build/webpack.config.js && webpack --config=build/webpack.gf.config.js && node build/userscript.js",
+    "watch:ui": "webpack --watch --config=build/webpack.config.js",
     "standard": "standard --plugin html 'src/**/*.{js,vue}' --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danydodson/userscript-plus.git"
+    "url": "git+https://github.com/jae-jae/userscript-plus.git"
   },
-  "author": "Dany Dodson <danydodson@gmail.com>",
+  "author": "Jaeger <JaegerCode@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danydodson/userscript-plus/issues"
@@ -37,6 +37,7 @@
     "animate.css": "^3.5.2",
     "fuzzy.js": "^0.1.0",
     "iview": "2.12.0",
+    "psl": "^1.1.31",
     "timeago.js": "^3.0.2",
     "vue": "^2.4.2",
     "vue-i18n": "7.2.0"
