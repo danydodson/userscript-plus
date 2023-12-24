@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-        <MainTable></MainTable>
-    </div>
+  <div id="app">
+    <MainTable></MainTable>
+  </div>
 </template>
 
 <script>
@@ -16,13 +16,13 @@ export default {
 
 <style>
 body {
-    width: 860px;
-    height: 492px;
-    overflow-x: hidden;
+  width: 800px;
+  height: 492px;
+  overflow-x: hidden;
 }
 
 #app {
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
 }
 </style>
