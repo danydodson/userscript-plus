@@ -4,3 +4,4 @@ node_modules/
 config/local.js
 npm-debug.log*
 *.log
+extension.pem
