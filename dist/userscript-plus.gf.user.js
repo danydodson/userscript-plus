@@ -27,6 +27,8 @@
 // @run-at             document-end
 // ==/UserScript==
 
+unsafeWindow.GmAjax = GM_xmlhttpRequest;
+
 (function () {
 
   'use strict'
