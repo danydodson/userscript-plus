@@ -1,3 +1,6 @@
-node_modules/
-.idea/
 .DS_Store
+node_modules/
+/.vscode
+config/local.js
+npm-debug.log*
+*.log

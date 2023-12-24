@@ -13,23 +13,23 @@
 <script>
 import Tools from '../common/js/tools'
 export default {
-  data() {
+  data () {
     return {
       curIndex: 0,
       goods: []
     }
   },
-  mounted() {
+  mounted () {
     this.getData()
     this.hide()
   },
   computed: {
-    showSupportBox() {
+    showSupportBox () {
       return this.goods.length > 0 && Tools.isZH()
     }
   },
   methods: {
-    getData() {
+    getData () {
       let api = 'https://gist.githubusercontent.com/jae-jae/addb107b30b12b5d54d2f062bf46e80d/raw/support-userscript-plus.json'
       window.fetch(api)
         .then((r) => {
@@ -39,10 +39,10 @@ export default {
           this.curIndex = this.random(0, json.length - 1)
         })
     },
-    random(min, max) {
+    random (min, max) {
       return (Math.random() * (max - min + 1) | 0) + min
     },
-    hide() {
+    hide () {
       setTimeout(() => {
         this.goods = []
       }, 10000)

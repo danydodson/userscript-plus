@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
 
-  "name": "Userscript+ for Tampermonkey",
-  "description": "Show current site all UserJS.The easier way to install UserJs for Tampermonkey.",
+  "name": "Userscript Plus",
+  "description": "Show current site all UserJS. The easier way to install UserJs for Tampermonkey.",
   "version": "1.4.5",
-  "author": "Jaeger <JaegerCode@gmail.com>",
-  "homepage_url": "https://github.com/jae-jae/Userscript-Plus",
+  "author": "Dany Dodson<danydodosn@gmail.com>",
+  "homepage_url": "https://github.com/danydodson/userscript-plus",
   "icons": {
     "16": "images/icon_16.png",
     "32": "images/icon_32.png",

@@ -1,7 +1,6 @@
 .DS_Store
-config/local.js
 node_modules/
-/dist
+/.vscode
+config/local.js
 npm-debug.log*
 *.log
-/.vscode

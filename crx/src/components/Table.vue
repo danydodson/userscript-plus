@@ -4,7 +4,7 @@
       <div>
         <Card :padding="0">
           <div slot="title" class="card-title">
-            <!--<span>Discover <Badge :count="count"></Badge> A script is suitable for the current page</span>-->
+            <!-- <span>Discover <Badge :count="count"></Badge> A script is suitable for the current page</span> -->
             <span v-if="!showSearchInput">
               <i18n path="table.tips" tag="span">
                 <Badge place="count" :count="count" style="padding:0px 5px;"></Badge>
@@ -22,13 +22,13 @@
               </Tooltip>
 
               <Tooltip :content="$t('table.feedback')" placement="bottom">
-                <Button type="dashed" @click="open('https://github.com/jae-jae/Userscript-Plus/issues')">
+                <Button type="dashed" @click="open('https://github.com/danydodson/userscript-plus/issues')">
                   <Icon type="bug"></Icon>
                 </Button>
               </Tooltip>
 
               <Tooltip content="Chrome" placement="bottom">
-                <Button type="dashed" @click="open('https://github.com/jae-jae/Userscript-Plus/tree/master/crx')">
+                <Button type="dashed" @click="open('https://github.com/danydodson/userscript-plus/tree/master/crx')">
                   <Icon type="social-chrome"></Icon>
                 </Button>
               </Tooltip>
@@ -40,7 +40,7 @@
               </Tooltip>
 
               <Tooltip content="GitHub" placement="bottom">
-                <Button type="dashed" @click="open('https://github.com/jae-jae/Userscript-Plus')">
+                <Button type="dashed" @click="open('https://github.com/danydodson/userscript-plus')">
                   <Icon type="social-github"></Icon>
                 </Button>
               </Tooltip>
@@ -80,7 +80,7 @@
 
             <Tab-Pane :label="$t('table.paypal')" name="paypal">
               <div style="text-align: center;">
-                <a href="https://paypal.me/jaepay/10" target="_blank">
+                <a href="https://paypal.me/danydodson/10" target="_blank">
                   <img src="https://ww1.sinaimg.cn/large/7de3675bly1fizzsw92owj207s03s748.jpg">
                 </a>
               </div>
@@ -250,7 +250,7 @@ export default {
     }
   },
   methods: {
-    getData(callback) {
+    getData (callback) {
       let host = 'baidu.com'
       window.fetch(`https://greasyfork.org/zh-CN/scripts/by-site/${host}.json`)
         .then((r) => {
@@ -259,7 +259,7 @@ export default {
           })
         })
     },
-    open(url) {
+    open (url) {
       window.open(url)
     }
   }

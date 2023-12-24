@@ -31,7 +31,7 @@
               </Tooltip>
 
               <Tooltip content="Chrome" placement="bottom">
-                <Button type="dashed" @click="open('https://github.com/jae-jae/Userscript-Plus/tree/master/crx')">
+                <Button type="dashed" @click="open('https://github.com/danydodson/userscript-plus/tree/master/crx')">
                   <Icon type="social-chrome"></Icon>
                 </Button>
               </Tooltip>
@@ -43,7 +43,7 @@
               </Tooltip>
 
               <Tooltip content="GitHub" placement="bottom">
-                <Button type="dashed" @click="open('https://github.com/jae-jae/Userscript-Plus')">
+                <Button type="dashed" @click="open('https://github.com/danydodson/userscript-plus')">
                   <Icon type="social-github"></Icon>
                 </Button>
               </Tooltip>
@@ -89,7 +89,7 @@
 
             <Tab-Pane :label="$t('table.paypal')" name="paypal">
               <div style="text-align: center;">
-                <a href="https://paypal.me/jaepay/10" target="_blank">
+                <a href="https://paypal.me/danydodson/10" target="_blank">
                   <img src="https://ww1.sinaimg.cn/large/7de3675bly1fizzsw92owj207s03s748.jpg">
                 </a>
               </div>
@@ -247,7 +247,7 @@ export default {
     }
   },
   watch: {
-    showBody(val) {
+    showBody (val) {
       if (val) {
         // maximize
         this.titleIcon = 'chevron-down'
@@ -269,11 +269,11 @@ export default {
     }
   },
   methods: {
-    close() {
+    close () {
       Tools.dispatchEvent('close')
     },
 
-    getData(callback) {
+    getData (callback) {
       let host = 'baidu.com'
       window.fetch(`https://greasyfork.org/zh-CN/scripts/by-site/${host}.json`)
         .then((r) => {
@@ -283,7 +283,7 @@ export default {
         })
     },
 
-    bodySwitch() {
+    bodySwitch () {
       if (this.data.length === 0 && this.showBody === false) {
         this.$Spin.show()
         Tools.dispatchEvent('loading')
@@ -303,7 +303,7 @@ export default {
         }, 500)
       }
     },
-    open(url) {
+    open (url) {
       window.open(url)
     }
   }

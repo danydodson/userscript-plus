@@ -29,4 +29,4 @@ cache:
 
 env:
   global:
-    - GH_REF: github.com/danydodson/userscript-plus.git
+    - GH_REF: "github.com/danydodson/userscript-plus.git"

@@ -1,5 +1,5 @@
 {
-  "name": "show-site-all-userjs",
+  "name": "userscript-plus",
   "version": "2.0.0",
   "description": "Show current site all UserJS. The easier way to install UserJs for Tampermonkey.",
   "scripts": {
@@ -9,19 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jae-jae/Show-Site-All-UserJS.git"
+    "url": "git+https://github.com/danydodson/userscript-plus.git"
   },
-  "keywords": [
-    "userjs",
-    "tampermonkey"
-  ],
-  "author": "Jaeger <JaegerCode@gmail.com>",
+  "author": "Dany Dodson <danydodosn@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jae-jae/Show-Site-All-UserJS/issues"
+    "url": "https://github.com/danydodson/userscript-plus/issues"
   },
-  "homepage": "https://github.com/jae-jae/Show-Site-All-UserJS#readme",
+  "homepage": "https://github.com/danydodson/userscript-plus#readme",
   "devDependencies": {
+    "@vue/runtime-dom": "^3.3.13",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
@@ -48,5 +45,9 @@
     "ignore": [
       "user.js"
     ]
-  }
+  },
+  "keywords": [
+    "userjs",
+    "tampermonkey"
+  ]
 }

@@ -7,10 +7,10 @@
 <script>
 import MainTable from './components/Table.vue'
 export default {
-    components: { MainTable },
-    mounted: function () {
+  components: { MainTable },
+  mounted: function () {
 
-    }
+  }
 }
 </script>
 
