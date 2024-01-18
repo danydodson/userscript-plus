@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/danydodson/userscript-plus.git"
   },
-  "author": "Dany Dodson <danydodson@gmail.com>",
+  "author": "Dany <danydodson@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danydodson/userscript-plus/issues"

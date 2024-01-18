@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jae-jae/userscript-plus.git"
+    "url": "git+https://github.com/danydodson/userscript-plus.git"
   },
-  "author": "Jaeger <JaegerCode@gmail.com>",
+  "author": "Dany <danydodson@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danydodson/userscript-plus/issues"
