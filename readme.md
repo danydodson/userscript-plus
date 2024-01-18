@@ -1,4 +1,4 @@
-![userscript+.gif](https://cdn.rawgit.com/jae-jae/_resources/master/img/userscript+.gif)
+<!-- ![userscript+.gif](https://cdn.rawgit.com/jae-jae/_resources/master/img/userscript+.gif) -->
 # Userscript+
 
 [![Build Status](https://travis-ci.org/jae-jae/Userscript-Plus.svg?branch=master)](https://travis-ci.org/jae-jae/Userscript-Plus)
@@ -24,21 +24,22 @@ Many times, we do not know whether some sites have users to provide the script t
  
   Chrome Store: [https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo]( https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
   
-  Firefox addons:[https://addons.mozilla.org/en-US/firefox/addon/tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey)
+  <!-- Firefox addons:[https://addons.mozilla.org/en-US/firefox/addon/tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey) -->
   
 2. Install `Userscript+`
 
-	You can install this script via `GreasyFork` or` GitHub`::
-    - GreasyFork: [https://greasyfork.org/en/scripts/482999](https://greasyfork.org/en/scripts/482999-userscript-show-all-userscripts)
+	<!-- You can install this script via `GreasyFork` or` GitHub`:: -->
+	You can install this script via `GitHub`:
+    <!-- - GreasyFork: [https://greasyfork.org/en/scripts/482999](https://greasyfork.org/en/scripts/482999-userscript-show-all-userscripts) -->
     - GitHub: [https://github.com/danydodson/userscript-plus/raw/main/dist/userscript-plus.user.js](https://github.com/danydodson/userscript-plus/raw/main/dist/userscript-plus.user.js)
 
 ### Userscript+ Chrome/Firefox extension
 ![](https://raw.githubusercontent.com/jae-jae/_resources/master/img/175033.png)
-- Chrome webstore:[https://chrome.google.com/webstore/detail/okiocdganiomklllkfkmhneoibegifch](https://chrome.google.com/webstore/detail/okiocdganiomklllkfkmhneoibegifch)
+<!-- - Chrome webstore:[https://chrome.google.com/webstore/detail/okiocdganiomklllkfkmhneoibegifch](https://chrome.google.com/webstore/detail/okiocdganiomklllkfkmhneoibegifch) -->
 
-- Github: [https://github.com/jae-jae/Userscript-Plus/raw/master/crx/extension.crx](https://github.com/jae-jae/Userscript-Plus/raw/master/crx/extension.crx)
+- Github: [https://github.com/danydodson/userscript-plus/raw/main/crx/extension.crx](https://github.com/danydodson/userscript-plus/raw/main/crx/extension.crx)
 
-- Firefox Add-ons: [https://addons.mozilla.org/en-US/firefox/addon/userscript-for-tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/userscript-for-tampermonkey)
+<!-- - Firefox Add-ons: [https://addons.mozilla.org/en-US/firefox/addon/userscript-for-tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/userscript-for-tampermonkey) -->
 
 ## Features
 -  Automatically appear in the lower right corner, recommend scripts for you, and will automatically disappear after 10 seconds
@@ -50,7 +51,7 @@ Many times, we do not know whether some sites have users to provide the script t
 -  Support access to the script home page and author home page
 -  Click the close button, the current site `this session` all the pages will no longer appear prompt box
 -  A prompt box is displayed only when found available script for the current site
--  i18n international multilingual support.(**[Locale contributions](https://github.com/jae-jae/Userscript-Plus/tree/master/src/common/lang) are welcomed!**)
+-  i18n international multilingual support.(**[Locale contributions](https://github.com/danydodson/userscript-plus/tree/master/src/common/lang) are welcomed!**)
 -  Vue + iView UI design smooth and beautiful
 
 ## Whitelist and blacklist

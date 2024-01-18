@@ -1,7 +1,7 @@
 {
   "name": "userscript-plus",
   "version": "2.0.0",
-  "description": "Show current site all UserJS. The easier way to install UserJs for Tampermonkey.",
+  "description": "Show all UserJS for current site. The easier way to install UserJs for Tampermonkey.",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",

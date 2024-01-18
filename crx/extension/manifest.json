@@ -2,10 +2,14 @@
   "manifest_version": 2,
 
   "name": "Userscript Plus",
-  "description": "Show current site all UserJS. The easier way to install UserJs for Tampermonkey.",
+  "description": "Show all UserJS for current site. The easier way to install UserJs for Tampermonkey.",
   "version": "1.4.5",
-  "author": "Nonce<danydodosn@gmail.com>",
+  "author": "dany<danydodosn@gmail.com>",
   "homepage_url": "https://github.com/danydodson/userscript-plus",
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ],
   "icons": {
     "16": "images/icon_16.png",
     "32": "images/icon_32.png",
@@ -26,10 +30,5 @@
   "background": {
     "scripts": [ "psl.min.js", "background.js" ],
     "persistent": false
-  },
-
-  "permissions": [
-    "tabs",
-    "*://*/*"
-  ]
+  }
 }
