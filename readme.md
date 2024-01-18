@@ -16,8 +16,8 @@
 
 Many times, we do not know whether some sites have users to provide the script to optimize the page, but **Userscript+** will be able to help you automatically find the applicable UserJS, and by default, according to the score from high to low order recommended to you, bring you a new `Tampermonkey` use experience!
 
-> - [中文说明](https://github.com/jae-jae/Userscript-Plus/blob/master/README-ZH.md)
-> - [Описание на русском](https://github.com/jae-jae/Userscript-Plus/blob/master/README-RU.md)
+> - [Chinese description](https://github.com/jae-jae/Userscript-Plus/blob/master/README-ZH.md)
+> - [Description in Russian](https://github.com/jae-jae/Userscript-Plus/blob/master/README-RU.md)
 
 ## Installation
 1. Install the Chrome/Firefox plugin `Tampermonkey`

@@ -8,9 +8,7 @@
 import MainTable from './components/Table.vue'
 export default {
   components: { MainTable },
-  mounted: function () {
-
-  }
+  mounted: function () { }
 }
 </script>
 

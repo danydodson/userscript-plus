@@ -10828,7 +10828,9 @@ var lang = _locale2.default[nlang] ? nlang : 'en';
 
 var i18n = new _vueI18n2.default({
   locale: lang,
-  messages: _locale2.default
+  messages: _locale2.default,
+  silentTranslationWarn: true,
+  silentFallbackWarn: true
 });
 
 var appEl = window.document.getElementById('app');
