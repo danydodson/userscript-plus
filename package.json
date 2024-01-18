@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/danydodson/userscript-plus#readme",
   "devDependencies": {
-    "@vue/runtime-dom": "^3.3.13",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
