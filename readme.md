@@ -10,14 +10,14 @@
 [![i18n](https://img.shields.io/badge/i18n-PR-blue.svg)](https://github.com/jae-jae/Userscript-Plus/tree/master/src/common/lang)
 [![GitHub stars](https://img.shields.io/github/stars/jae-jae/Userscript-Plus.svg?style=social&label=Star&style=flat-square)](https://github.com/jae-jae/Userscript-Plus)
 
-> Show current site all UserJS，The easier way to install UserJs for Tampermonkey. 
+Show current site all UserJS，The easier way to install UserJs for Tampermonkey. 
 
 **Userscript +** is a `Tampermonkey` user script, the role is when you browse the web, from the bottom right corner automatically for you to recommend the current page `Tampermonkey` script, and can install a designated script.
 
 Many times, we do not know whether some sites have users to provide the script to optimize the page, but **Userscript+** will be able to help you automatically find the applicable UserJS, and by default, according to the score from high to low order recommended to you, bring you a new `Tampermonkey` use experience!
 
-> - [Chinese description](https://github.com/jae-jae/Userscript-Plus/blob/master/README-ZH.md)
-> - [Description in Russian](https://github.com/jae-jae/Userscript-Plus/blob/master/README-RU.md)
+<!-- > - [Chinese description](https://github.com/jae-jae/Userscript-Plus/blob/master/README-ZH.md)
+> - [Description in Russian](https://github.com/jae-jae/Userscript-Plus/blob/master/README-RU.md) -->
 
 ## Installation
 1. Install the Chrome/Firefox plugin `Tampermonkey`
@@ -29,8 +29,8 @@ Many times, we do not know whether some sites have users to provide the script t
 2. Install `Userscript+`
 
 	You can install this script via `GreasyFork` or` GitHub`::
-    - GreasyFork: [https://greasyfork.org/en/scripts/24508](https://greasyfork.org/en/scripts/24508-userscript-show-site-all-userjs)
-    - GitHub: [https://github.com/jae-jae/Userscript-Plus/raw/master/dist/show-site-all-userjs.user.js](https://github.com/jae-jae/Userscript-Plus/raw/master/dist/show-site-all-userjs.user.js)
+    - GreasyFork: [https://greasyfork.org/en/scripts/482999](https://greasyfork.org/en/scripts/482999-userscript-show-all-userscripts)
+    - GitHub: [https://github.com/danydodson/userscript-plus/raw/main/dist/userscript-plus.user.js](https://github.com/danydodson/userscript-plus/raw/main/dist/userscript-plus.user.js)
 
 ### Userscript+ Chrome/Firefox extension
 ![](https://raw.githubusercontent.com/jae-jae/_resources/master/img/175033.png)
