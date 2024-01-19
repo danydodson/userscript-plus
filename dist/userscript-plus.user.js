@@ -10,9 +10,9 @@
 
 // @require      https://cdn.jsdelivr.net/gh/danydodson/l.js/userjs/l.userjs.min.js
 // @require      https://cdn.jsdelivr.net/gh/danydodson/l.js@master/lib.js
-// @resource     uiJs https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.js?_=1705673087474
+// @resource     uiJs https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.js?_=1705676173632
 
-// @resource     ui https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.html?_=1705673087474
+// @resource     ui https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.html?_=1705676173632
 // @resource     count https://greasyfork.org/scripts/by-site.json
 // @grant        GM_xmlhttpRequest
 // @grant        GM_getResourceText
