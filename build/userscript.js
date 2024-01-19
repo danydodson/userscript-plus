@@ -35,5 +35,5 @@ var ljs = `// @require      https://cdn.jsdelivr.net/gh/danydodson/l.js/userjs/l
 // @resource     uiJs https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.js?_=${time}
 `
 
-renderOut('./dist/userscripts-userscript-plus.user.js', ljs)
+renderOut('./dist/userscript-plus.user.js', ljs)
 
