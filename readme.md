@@ -1,4 +1,5 @@
-<!-- ![UserScript+.gif](https://cdn.rawgit.com/jae-jae/_resources/master/img/UserScript+.gif) -->
+![UserScript+.gif](https://cdn.rawgit.com/jae-jae/_resources/master/img/UserScript+.gif)
+
 # UserScript+
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-up%20to%20date-green.svg)](https://tampermonkey.net/)
 [![webpack](https://img.shields.io/badge/webpack-3.x-orange.svg)](https://github.com/webpack/webpack)
@@ -17,7 +18,7 @@ Many times, we do not know whether some sites have users to provide the script t
 ## Installation
 1. Install the Chrome/Firefox plugin `Tampermonkey`
     - Chrome Store: [Tampermonkey]( https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-    - Firefox addons: [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey)
+    - Firefox Add-ons: [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey)
   
 2. Install `UserScript+` via `GreasyFork` or` GitHub`
     - GreasyFork: [Userscript+: Show All UserScripts](https://greasyfork.org/en/scripts/482999-userscript-show-all-userscripts)
@@ -26,11 +27,11 @@ Many times, we do not know whether some sites have users to provide the script t
 ### UserScript+ Chrome/Firefox extension
 ![](https://raw.githubusercontent.com/jae-jae/_resources/master/img/175033.png)
   
-  - Chrome webstore: [userscript-plus](https://chrome.google.com/webstore/detail/okiocdganiomklllkfkmhneoibegifch)  
+  - Chrome Store: [userscript-plus](https://chrome.google.com/webstore/detail/okiocdganiomklllkfkmhneoibegifch)  
   
   - Github: [extension.crx](https://github.com/danydodson/userscript-plus/raw/main/crx/extension.crx)  
   
-  - Firefox Add-ons: [userscript-for-tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/userscript-for-tampermonkey)  
+  - Firefox Add-ons: [userscript-plus](https://addons.mozilla.org/en-US/firefox/addon/userscript-for-tampermonkey)  
 
 ## Features
 -  Automatically appear in the lower right corner, recommend scripts for you, and will automatically disappear after 10 seconds
@@ -48,12 +49,14 @@ Many times, we do not know whether some sites have users to provide the script t
 ## Whitelist and blacklist
 > Edit script => Settings tab => Includes/Excludes
 
-In the `Tampermonkey` to enter the script editing interface, select` Setting `tab, this tab below the` Includes/Excludes `option, set the white list and blacklist here, see Figure:
+In `Tampermonkey` enter the script editing interface and select the `Settings` tab. A couple rows down are the `Includes/Excludes` options, set your white list and blacklist options here.  
+
+See Figure:
 
 ![us+en-ex.gif](https://cdn.rawgit.com/jae-jae/_resources/master/img/us+en-ex.gif)
 
 ## Known bug
-1. In some sites below the plug-in interface icon is not displayed，Such as:Github
+1. In some sites below the plug-in interface icon is not displayed，Such as Github
 
     **Reason**：This is because the security policy of these sites to prevent the plug-in icon font file loading, resulting in the icon does not display properly.
 
