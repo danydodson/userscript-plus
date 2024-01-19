@@ -11,7 +11,7 @@
     "watch": "webpack --watch --config=build/webpack.config.js"
   },
   "dependencies": {
-    "animate.css": "^3.5.2",
+    "animate.css": "^4.1.1",
     "fuzzy.js": "^0.1.0",
     "iview": "2.12.0",
     "timeago.js": "^3.0.2",
