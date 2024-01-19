@@ -114,10 +114,8 @@ export default {
               callback(json)
             })
           })
-
           fetchJS(this.nano(config.api, { host: host }))
           fetchJS(this.nano(config.sapi, { host: host }))
-
           console.log(data)
         }
       })
