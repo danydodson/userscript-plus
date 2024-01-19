@@ -81,9 +81,9 @@
 import Tools from '../common/js/tools'
 import Info from './Info.vue'
 import Indicator from './Indicator.vue'
-import Support from './Support.vue'
+// import Support from './Support.vue'
 export default {
-  components: { Info, Indicator, Support },
+  components: { Info, Indicator },
   mounted: function () {
     // let host =  location.host.split('.').splice(-2).join('.');
     /** let host = 'google.com'
@@ -210,7 +210,7 @@ export default {
     }
   },
   watch: {
-    showBody (val) {
+    showBody(val) {
       if (val) {
         // maximize
         this.titleIcon = 'chevron-down'
@@ -232,11 +232,11 @@ export default {
     }
   },
   methods: {
-    close () {
+    close() {
       Tools.dispatchEvent('close')
     },
 
-    getData (callback) {
+    getData(callback) {
       let host = 'google.com'
       window.fetch(`https://greasyfork.org/en/scripts/by-site/${host}.json`)
         .then((r) => {
@@ -246,7 +246,7 @@ export default {
         })
     },
 
-    bodySwitch () {
+    bodySwitch() {
       if (this.data.length === 0 && this.showBody === false) {
         this.$Spin.show()
         Tools.dispatchEvent('loading')
@@ -266,7 +266,7 @@ export default {
         }, 500)
       }
     },
-    open (url) {
+    open(url) {
       window.open(url)
     }
   }

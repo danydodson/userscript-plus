@@ -2,14 +2,13 @@
 
 import timeago from 'timeago.js'
 import fuzzy from 'fuzzy.js'
-import psl from 'psl'
 
 let config = {
   cacheKey: 'jae_fetch_userjs_cache',
   countKey: 'jae_fetch_userjs_count',
-  host: psl.get(window.location.hostname) || window.location.hostname.split('.').splice(-2).join('.'),
-  api: 'https://greasyfork.org/en/scripts/by-site/{host}.json'
-  // api: 'https://sleazyfork.org/en/scripts/by-site/{host}.json'
+  host: window.location.hostname.split('.').splice(-2).join('.'),
+  api: 'https://greasyfork.org/en/scripts/by-site/{host}.json',
+  sapi: "https://sleazyfork.org/scripts/by-site/{host}.json"
 }
 
 export default {
@@ -50,24 +49,52 @@ export default {
     })
   },
   // Get the script data of the oily monkey cache
+  // getData(callback) {
+  //   let data = sessionStorage.getItem(config.cacheKey)
+  //   if (data) {
+  //     data = JSON.parse(data)
+  //     callback(data)
+  //   } else {
+  //     let api = this.nano(config.api, {
+  //       host: config.host
+  //     })
+  //     this.getJSON(api, (json) => {
+  //       json = json.map((item) => {
+  //         item.user = item.users[0]
+  //         return item
+  //       })
+  //       sessionStorage.setItem(config.cacheKey, JSON.stringify(json))
+  //       callback(json)
+  //     })
+  //   }
+  // },
+
   getData(callback) {
-    let data = sessionStorage.getItem(config.cacheKey)
-    if (data) {
-      data = JSON.parse(data)
-      callback(data)
-    } else {
-      let api = this.nano(config.api, {
-        host: config.host
+    this.sessionStorage.then(bgSessionStorage => {
+      this.host.then(host => {
+        let data = bgSessionStorage.getItem(host)
+        if (data) {
+          data = JSON.parse(data)
+          callback(data)
+        } else {
+          let fetchJS = url => fetch(url).then(r => {
+            r.json().then((json) => {
+              json = json.map((item) => {
+                item.user = item.users[0]
+                return item
+              })
+              bgSessionStorage.setItem(host, JSON.stringify(json))
+              callback(json)
+            })
+          })
+
+          fetchJS(this.nano(config.api, { host: host }))
+          fetchJS(this.nano(config.sapi, { host: host }))
+
+          console.log(data)
+        }
       })
-      this.getJSON(api, (json) => {
-        json = json.map((item) => {
-          item.user = item.users[0]
-          return item
-        })
-        sessionStorage.setItem(config.cacheKey, JSON.stringify(json))
-        callback(json)
-      })
-    }
+    })
   },
 
   getCount() {

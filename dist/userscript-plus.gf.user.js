@@ -55,7 +55,7 @@ unsafeWindow.GmAjax = GM_xmlhttpRequest;
       key: 'getMainHost',
       value: function getMainHost() {
         var host = window.location.hostname
-        return psl.get(host) || host.split('.').splice(-2).join('.')
+        return host.split('.').splice(-2).join('.')
       }
     }, {
       key: 'getCountData',
@@ -150,7 +150,7 @@ unsafeWindow.GmAjax = GM_xmlhttpRequest;
     return FetchUserjs
   }()
 
-  ljs.exec(['jQuery', 'iframe', 'psl'], function () {
+  ljs.exec(['jQuery', 'iframe'], function () {
     var fu = new FetchUserjs()
     fu.render()
   })

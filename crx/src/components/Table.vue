@@ -65,9 +65,10 @@
 <script>
 import Tools from '../common/js/tools'
 import Info from './Info.vue'
-import Support from './Support.vue'
+// import Support from './Support.vue'
+
 export default {
-  components: { Info, Support },
+  components: { Info },
   mounted: function () {
     this.$Spin.show()
     Tools.getData((json) => {
@@ -213,7 +214,7 @@ export default {
     }
   },
   methods: {
-    getData (callback) {
+    getData(callback) {
       let host = 'google.com'
       window.fetch(`https://greasyfork.org/en/scripts/by-site/${host}.json`)
         .then((r) => {
@@ -222,7 +223,7 @@ export default {
           })
         })
     },
-    open (url) {
+    open(url) {
       window.open(url)
     }
   }

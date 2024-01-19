@@ -25,8 +25,8 @@
 // @connect            greasyfork.org
 // @connect            cdn.jsdelivr.net
 // @run-at             document-end
-// @downloadURL https://update.greasyfork.org/scripts/482999/Userscript%2B%3A%20Show%20All%20UserScripts.user.js
-// @updateURL https://update.greasyfork.org/scripts/482999/Userscript%2B%3A%20Show%20All%20UserScripts.meta.js
+// @downloadURL        https://update.greasyfork.org/scripts/482999/Userscript%2B%3A%20Show%20All%20UserScripts.user.js
+// @updateURL          https://update.greasyfork.org/scripts/482999/Userscript%2B%3A%20Show%20All%20UserScripts.meta.js
 // ==/UserScript==
 
 unsafeWindow.GmAjax = GM_xmlhttpRequest;
@@ -54,7 +54,7 @@ unsafeWindow.GmAjax = GM_xmlhttpRequest;
       key: 'getMainHost',
       value: function getMainHost() {
         var host = window.location.hostname
-        return psl.get(host) || host.split('.').splice(-2).join('.')
+        return host.split('.').splice(-2).join('.')
       }
     }, {
       key: 'getCountData',
@@ -149,7 +149,7 @@ unsafeWindow.GmAjax = GM_xmlhttpRequest;
     return FetchUserjs
   }()
 
-  ljs.exec(['jQuery', 'iframe', 'psl'], function () {
+  ljs.exec(['jQuery', 'iframe'], function () {
     var fu = new FetchUserjs()
     fu.render()
   })

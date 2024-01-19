@@ -1,34 +1,32 @@
 {
   "manifest_version": 2,
-
   "name": "Userscript Plus",
   "description": "Show all UserJS for current site. The easier way to install UserJs for Tampermonkey.",
-  "version": "1.4.5",
-  "author": "dany<danydodosn@gmail.com>",
-  "homepage_url": "https://github.com/danydodson/userscript-plus",
+  "author": "danydodson",
+  "version": "2.4.0",
+  "homepage_url": "https://github.com/danydodson/userscript-plus#readme.md",
   "permissions": [
     "tabs",
+    "activeTab",
     "*://*/*"
   ],
   "icons": {
-    "16": "images/icon_16.png",
-    "32": "images/icon_32.png",
-    "96": "images/icon_96.png",
-    "128": "images/icon_128.png"
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "96": "icons/icon_96.png",
+    "128": "icons/icon_128.png"
   },
-
   "browser_action": {
     "default_icon": {
-      "16": "images/icon_16.png",
-      "32": "images/icon_32.png",
-      "96": "images/icon_96.png",
-      "128": "images/icon_128.png"
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "96": "icons/icon_96.png",
+      "128": "icons/icon_128.png"
     },
     "default_popup": "popup.html"
   },
-
   "background": {
-    "scripts": [ "psl.min.js", "background.js" ],
+    "scripts": [ "background.js" ],
     "persistent": false
   }
 }

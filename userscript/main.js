@@ -9,7 +9,7 @@ class FetchUserjs {
 
   getMainHost() {
     let host = window.location.hostname
-    return psl.get(host) || host.split('.').splice(-2).join('.')
+    return host.split('.').splice(-2).join('.')
   }
 
   getCountData(host) {
@@ -93,7 +93,7 @@ class FetchUserjs {
 
 }
 
-ljs.exec(['jQuery', 'iframe', 'psl'], () => {
+ljs.exec(['jQuery', 'iframe'], () => {
   let fu = new FetchUserjs()
   fu.render()
 })

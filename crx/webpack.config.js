@@ -1,24 +1,23 @@
 var webpack = require('webpack')
-var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: {
-    ui: "./src/main.js"
+    ui: './src/main.js'
   },
   output: {
     path: __dirname + '/extension',
-    filename: "popup.js"
+    filename: 'popup.js'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        loader: 'babel-loader'
       },
       {
         test: /\.vue$/,
-        loader: "vue-loader"
+        loader: 'vue-loader'
       },
       {
         test: /\.css$/,
@@ -37,7 +36,7 @@ module.exports = {
   watchOptions: {
     poll: 1000,
     aggregateTimeout: 500,
-    ignored: /node_modules/,
+    ignored: /node_modules/
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
