@@ -45,6 +45,6 @@ module.exports = {
         from: './src/ui.html',
         to: 'ui.html'
       }
-    ])
+    ]),
   ]
 }
