@@ -1,5 +1,17 @@
-# Userscript+ Chrome extension
+<!--  -->
+# Userscript+: Chrome Extension
 
-![](https://raw.githubusercontent.com/danydodson/userscript-plus/main/media/175033.png)
+![](https://raw.githubusercontent.com/danydodson/userscript-plus/main/crx/extension/screenshots/preview.png)
 
-- Install: [https://github.com/danydodson/userscript-plus/raw/main/crx/extension.crx](https://github.com/danydodson/userscript-plus/raw/main/crx/extension.crx)
+## Installation
+Install via `Chrome Store` or `.crx` package.
+  - Chrome Store: [Tampermonkey]( https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+  - Package: [extension.crx](https://github.com/danydodson/userscript-plus/raw/main/crx/extension.crx)
+
+## See also
+See the entire project.
+
+ - GitHub: [danydodson/userscript-plus](https://github.com/danydodson/userscript-plus#readme.md)
+
+## License
+MIT
