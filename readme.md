@@ -1,6 +1,7 @@
-![UserScript+.gif](https://cdn.rawgit.com/jae-jae/_resources/master/img/UserScript+.gif)
-
 # UserScript+
+
+<!-- ![UserScript+.gif](https://raw.githubusercontent.com/danydodson/userscript-plus/main/crx/extension/screenshots/userscript+.gif) -->
+
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-up%20to%20date-green.svg)](https://tampermonkey.net/)
 [![webpack](https://img.shields.io/badge/webpack-3.x-orange.svg)](https://github.com/webpack/webpack)
 [![Vue](https://img.shields.io/badge/Vue-2.4%2B-yellow.svg)](https://vuejs.org/)
@@ -20,7 +21,7 @@ Many times, we do not know whether some sites have users to provide the script t
     - Chrome Store: [Tampermonkey]( https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
     - Firefox Add-ons: [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey)
   
-2. Install `UserScript+` via `GreasyFork` or` GitHub`
+2. Install `UserScript+` via `GreasyFork` or `GitHub`
     - GreasyFork: [Userscript+: Show All UserScripts](https://greasyfork.org/en/scripts/482999-userscript-show-all-userscripts)
     - GitHub: [userscript-plus.user.js](https://github.com/danydodson/userscript-plus/raw/main/dist/userscript-plus.user.js)
 
