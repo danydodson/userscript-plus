@@ -7,11 +7,6 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.23.6.tgz#ba1c9e512bda72a47e285ae42aff9d2a635a9e3b"
   integrity sha512-Z2uID7YJ7oNvAI20O9X0bblw7Qqs8Q2hFy0R9tAfnfLkp5MW0UH9eUvnDSnFwKZ0AvgS1ucqR4KzvVHgnke1VQ==
 
-"@types/jquery@^2.0.40":
-  version "2.0.68"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.68.tgz#f8115a3fd77b503c995e91f4b9a6ecbabf63ad26"
-  integrity sha512-9E8HinL4D/VgWf6tci0/NWlkw8i8e5pL00yVmBpFaVmveSwMq3lEQcrRJVbu62Fprm3nBTHXkqkEByjGoQCpTA==
-
 "@vue/compiler-sfc@2.7.16":
   version "2.7.16"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-2.7.16.tgz#ff81711a0fac9c68683d8bb00b63f857de77dc83"
@@ -4173,12 +4168,10 @@ through2@^2.0.0:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
-timeago.js@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/timeago.js/-/timeago.js-3.0.2.tgz#32a67e7c0d887ea42ca588d3aae26f77de5e76cc"
-  integrity sha512-aVUZETb7Pg6Q6DFqcU2obSVDWKFuG6ZdWcgSSMxOJ+D7dlGf8w6h1JBHz9ChjUB9/lWK2ZDgZQGwzElw8WNzlw==
-  dependencies:
-    "@types/jquery" "^2.0.40"
+timeago.js@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/timeago.js/-/timeago.js-4.0.2.tgz#724e8c8833e3490676c7bb0a75f5daf20e558028"
+  integrity sha512-a7wPxPdVlQL7lqvitHGGRsofhdwtkoSXPGATFuSOA2i1ZNQEPLrGnj68vOp2sOJTCFAQVXPeNMX/GctBaO9L2w==
 
 timers-browserify@^2.0.4:
   version "2.0.12"
