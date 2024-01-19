@@ -37,8 +37,8 @@
   "keywords": [
     "userjs",
     "userscripts",
+    "tampermonkey",
     "greasyfork",
-    "greasyfork",
-    "tampermonkey"
+    "vue"
   ]
 }
