@@ -11,7 +11,7 @@
                 <Badge place="count" :count="count" style="padding:0px 5px;"></Badge>
               </i18n>
               <span v-show="showBody">
-                - Userscript+
+                - UserScript Plus
               </span>
             </span>
             <Input v-else v-model="searchInput" icon="android-search" placeholder="Enter title、description、author..." style="width: 450px;height: 25px;"></Input>

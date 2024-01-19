@@ -3,13 +3,13 @@
   "version": "2.4.0",
   "manifest_version": 3,
   "description": "Show all UserJS for current site.",
-  "default_title": "Open UserScript+",
+  "default_title": "Open UserScript Plus",
   "background": {
     "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Open Userscript+",
+    "default_title": "Open UserScript Plus",
     "default_icon": {
       "16": "icons/icon_16.png",
       "32": "icons/icon_32.png",

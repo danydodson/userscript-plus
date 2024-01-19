@@ -1,4 +1,4 @@
-# UserScript+
+# UserScript Plus
 
 <!-- ![UserScript+.gif](https://raw.githubusercontent.com/danydodson/userscript-plus/main/crx/extension/screenshots/userscript+.gif) -->
 
@@ -14,18 +14,18 @@ Show current site all UserJS，The easier way to install UserJs for Tampermonkey
 
 **Userscript +** is a `Tampermonkey` user script, the role is when you browse the web, from the bottom right corner automatically for you to recommend the current page `Tampermonkey` script, and can install a designated script.
 
-Many times, we do not know whether some sites have users to provide the script to optimize the page, but **UserScript+** will be able to help you automatically find the applicable UserJS, and by default, according to the score from high to low order recommended to you, bring you a new `Tampermonkey` use experience!
+Many times, we do not know whether some sites have users to provide the script to optimize the page, but **UserScript Plus** will be able to help you automatically find the applicable UserJS, and by default, according to the score from high to low order recommended to you, bring you a new `Tampermonkey` use experience!
 
 ## Installation
 1. Install the Chrome/Firefox plugin `Tampermonkey`
     - Chrome Store: [Tampermonkey]( https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
     - Firefox Add-ons: [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey)
   
-2. Install `UserScript+` via `GreasyFork` or `GitHub`
-    - GreasyFork: [Userscript+: Show All UserScripts](https://greasyfork.org/en/scripts/482999-userscript-show-all-userscripts)
+2. Install `UserScript Plus` via `GreasyFork` or `GitHub`
+    - GreasyFork: [UserScript Plus: Show All UserScripts](https://greasyfork.org/en/scripts/482999-userscript-show-all-userscripts)
     - GitHub: [userscript-plus.user.js](https://github.com/danydodson/userscript-plus/raw/main/dist/userscript-plus.user.js)
 
-### UserScript+ Chrome/Firefox extension
+### UserScript Plus Chrome/Firefox extension
 ![](https://raw.githubusercontent.com/jae-jae/_resources/master/img/175033.png)
   
   - Chrome Store: [userscript-plus](https://chrome.google.com/webstore/detail/okiocdganiomklllkfkmhneoibegifch)  
