@@ -31,8 +31,8 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           
-      # - name: Autobuild
-      #   uses: github/codeql-action/autobuild@v3
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
 
       # ℹ️ Command-line programs to run using the OS shell.
       # 📚 https://git.io/JvXDl
@@ -49,9 +49,7 @@ jobs:
         with:
           paths: 
             src
-            crx.src
+            crx/src
           ignore_paths: 
-            popup.js
-            ui.gf.js
-            ui.js
-            userscripts-userscript-plus.user.js
+            dist
+            crx/extension/popup.js
