@@ -2,6 +2,7 @@
 
 <!-- ![UserScript+.gif](https://raw.githubusercontent.com/danydodson/userscript-plus/main/crx/extension/screenshots/userscript+.gif) -->
 
+[![CodeQL Analysis](https://github.com/danydodson/userscript-plus/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/danydodson/userscript-plus/actions/workflows/codeql-analysis.yml)
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-up%20to%20date-green.svg)](https://tampermonkey.net/)
 [![webpack](https://img.shields.io/badge/webpack-3.x-orange.svg)](https://github.com/webpack/webpack)
 [![Vue](https://img.shields.io/badge/Vue-2.4%2B-yellow.svg)](https://vuejs.org/)
