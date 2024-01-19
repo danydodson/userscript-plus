@@ -7,7 +7,6 @@ function getCurrentTabUrl(callback) {
     currentWindow: true
   }
   
-  
   chrome.tabs.query(queryInfo, (tabs) => {
     var tab = tabs[0]
     var url = tab.url
@@ -27,7 +26,7 @@ function changeBadge(data) {
   getCurrentTabUrl(function (url) {
     let host = getUrlHost(url)
     let count = data[host]
-    count = count > 50 ? 50 : count
+    count = count > 99 ? 99 : count
     sessionStorage.setItem('host', host)
     if (count) {
       // use text: count.toString() to show count badge

@@ -48,6 +48,7 @@ export default {
       }
     })
   },
+
   // Get the script data of the oily monkey cache
   // getData(callback) {
   //   let data = sessionStorage.getItem(config.cacheKey)
@@ -87,11 +88,8 @@ export default {
               callback(json)
             })
           })
-
           fetchJS(this.nano(config.api, { host: host }))
           fetchJS(this.nano(config.sapi, { host: host }))
-
-          console.log(data)
         }
       })
     })
@@ -99,7 +97,7 @@ export default {
 
   getCount() {
     let count = sessionStorage.getItem(config.countKey)
-    return count >= 50 ? 50 : count
+    return count >= 99 ? 99 : count
   },
 
   searcher(data, query) {
