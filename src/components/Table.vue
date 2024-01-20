@@ -11,7 +11,7 @@
                 <Badge place="count" :count="count" style="padding:0px 5px;"></Badge>
               </i18n>
               <span v-show="showBody">
-                - UserScript Plus
+                - Userscript Plus
               </span>
             </span>
             <Input v-else v-model="searchInput" icon="android-search" placeholder="Enter title、description、author..." style="width: 450px;height: 25px;"></Input>
@@ -67,11 +67,8 @@
         </Card>
       </div>
     </transition>
-
     <div v-show="!showTitle" @mouseover='showTitle = true'>
-
       <Indicator :count="count"></Indicator>
-
     </div>
   </div>
 </template>
@@ -81,20 +78,20 @@
 import Tools from '../common/js/tools'
 import Info from './Info.vue'
 import Indicator from './Indicator.vue'
-// import Support from './Support.vue'
+import Support from './Support.vue'
 export default {
-  components: { Info, Indicator },
+  components: { Info, Indicator, Support },
   mounted: function () {
-    // let host =  location.host.split('.').splice(-2).join('.');
-    /** let host = 'google.com'
-    fetch(`https://greasyfork.org/en/scripts/by-site/${host}.json`)
-        .then((r) => {
-            r.json().then((json) => {
-                this.data = json
-            })
-        })**/
+    // let host = location.host.split('.').splice(-2).join('.')
+    // let host = 'google.com'
+    // fetch(`https://greasyfork.org/en/scripts/by-site/${host}.json`)
+    //   .then((r) => {
+    //     r.json().then((json) => {
+    //       this.data = json
+    //     })
+    //   })
     // this.data = Tools.getData()
-    // this.data = [];
+    // this.data = []
     this.count = Tools.getCount()
   },
   data: function () {

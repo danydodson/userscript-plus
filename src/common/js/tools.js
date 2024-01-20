@@ -8,14 +8,16 @@ let config = {
   countKey: 'jae_fetch_userjs_count',
   host: window.location.hostname.split('.').splice(-2).join('.'),
   api: 'https://greasyfork.org/en/scripts/by-site/{host}.json',
-  sapi: "https://sleazyfork.org/scripts/by-site/{host}.json"
+  apis: 'https://sleazyfork.org/en/scripts/by-site/{host}.json'
 }
 
 export default {
+
   timeagoFormat(time) {
     let lang = (navigator.language === 'zh-CN') ? 'zh_CN' : 'en_short'
     return timeago(null, lang).format(time)
   },
+
   installUserJs(uri) {
     // const event = new Event('click', true, true)
     let evt = parent.document.createEvent('MouseEvents')
@@ -26,9 +28,11 @@ export default {
     // link.click()
     link.dispatchEvent(evt)
   },
+
   dispatchEvent(eventName) {
     parent.document.getElementById('jae_userscript_box').dispatchEvent(new Event(eventName))
   },
+
   /* Nano Templates - https://github.com/trix/nano */
   nano(template, data) {
     return template.replace(/\{([\w.]*)\}/g, function (str, key) {
@@ -38,6 +42,7 @@ export default {
       return (typeof v !== 'undefined' && v !== null) ? v : ''
     })
   },
+
   getJSON(url, callback) {
     parent.window.GmAjax({
       method: 'GET',
@@ -50,54 +55,29 @@ export default {
   },
 
   // Get the script data of the oily monkey cache
-  // getData(callback) {
-  //   let data = sessionStorage.getItem(config.cacheKey)
-  //   if (data) {
-  //     data = JSON.parse(data)
-  //     callback(data)
-  //   } else {
-  //     let api = this.nano(config.api, {
-  //       host: config.host
-  //     })
-  //     this.getJSON(api, (json) => {
-  //       json = json.map((item) => {
-  //         item.user = item.users[0]
-  //         return item
-  //       })
-  //       sessionStorage.setItem(config.cacheKey, JSON.stringify(json))
-  //       callback(json)
-  //     })
-  //   }
-  // },
-
   getData(callback) {
-    this.sessionStorage.then(bgSessionStorage => {
-      this.host.then(host => {
-        let data = bgSessionStorage.getItem(host)
-        if (data) {
-          data = JSON.parse(data)
-          callback(data)
-        } else {
-          let fetchJS = url => fetch(url).then(r => {
-            r.json().then((json) => {
-              json = json.map((item) => {
-                item.user = item.users[0]
-                return item
-              })
-              bgSessionStorage.setItem(host, JSON.stringify(json))
-              callback(json)
-            })
-          })
-          fetchJS(this.nano(config.api, { host: host }))
-          fetchJS(this.nano(config.sapi, { host: host }))
-        }
+    let data = sessionStorage.getItem(config.cacheKey)
+    if (data) {
+      data = JSON.parse(data)
+      callback(data)
+    } else {
+      let api = this.nano(config.api, {
+        host: config.host
       })
-    })
+      this.getJSON(api, (json) => {
+        json = json.map((item) => {
+          item.user = item.users[0]
+          return item
+        })
+        sessionStorage.setItem(config.cacheKey, JSON.stringify(json))
+        callback(json)
+      })
+    }
   },
 
   getCount() {
     let count = sessionStorage.getItem(config.countKey)
-    return count >= 99 ? 99 : count
+    return count >= 50 ? 50 : count
   },
 
   searcher(data, query) {
@@ -123,7 +103,9 @@ export default {
         'score': max.score
       })
     }
+
     rt = rt.filter((a) => a.score !== 0).sort((a, b) => b.score - a.score).map((a) => a.item)
+
     return rt
   },
 

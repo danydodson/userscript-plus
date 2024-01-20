@@ -4,8 +4,7 @@ import timeago from 'timeago.js'
 import fuzzy from 'fuzzy.js'
 
 let config = {
-  api: 'https://greasyfork.org/en/scripts/by-site/{host}.json',
-  sapi: "https://sleazyfork.org/scripts/by-site/{host}.json"
+  api: 'https://greasyfork.org/en/scripts/by-site/{host}.json'
 }
 
 export default {
@@ -69,53 +68,28 @@ export default {
   },
 
   // Get the script data of the oily monkey cache
-  // getData(callback) {
-  //   this.sessionStorage.then((bgSessionStorage) => {
-  //     this.host.then((host) => {
-  //       let data = bgSessionStorage.getItem(host)
-  //       if (data) {
-  //         data = JSON.parse(data)
-  //         callback(data)
-  //       } else {
-  //         let api = this.nano(config.api, {
-  //           host: host
-  //         })
-  //         fetch(api)
-  //           .then((r) => {
-  //             r.json().then((json) => {
-  //               json = json.map((item) => {
-  //                 item.user = item.users[0]
-  //                 return item
-  //               })
-  //               bgSessionStorage.setItem(host, JSON.stringify(json))
-  //               callback(json)
-  //             })
-  //           })
-  //       }
-  //     })
-  //   })
-  // },
-
   getData(callback) {
-    this.sessionStorage.then(bgSessionStorage => {
-      this.host.then(host => {
+    this.sessionStorage.then((bgSessionStorage) => {
+      this.host.then((host) => {
         let data = bgSessionStorage.getItem(host)
         if (data) {
           data = JSON.parse(data)
           callback(data)
         } else {
-          let fetchJS = url => fetch(url).then(r => {
-            r.json().then((json) => {
-              json = json.map((item) => {
-                item.user = item.users[0]
-                return item
-              })
-              bgSessionStorage.setItem(host, JSON.stringify(json))
-              callback(json)
-            })
+          let api = this.nano(config.api, {
+            host: host
           })
-          fetchJS(this.nano(config.api, { host: host }))
-          fetchJS(this.nano(config.sapi, { host: host }))
+          fetch(api)
+            .then((r) => {
+              r.json().then((json) => {
+                json = json.map((item) => {
+                  item.user = item.users[0]
+                  return item
+                })
+                bgSessionStorage.setItem(host, JSON.stringify(json))
+                callback(json)
+              })
+            })
         }
       })
     })

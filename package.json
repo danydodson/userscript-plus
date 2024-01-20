@@ -1,22 +1,23 @@
 {
   "name": "userscript-plus",
   "version": "2.4.0",
-  "description": "Show all UserJS for current site. The easier way to install UserJs for Tampermonkey.",
+  "description": "Show all UserJS for current site.",
   "homepage": "https://github.com/danydodson/userscript-plus#readme",
-  "repository": "github:danydodson/userscript-plus",
-  "author": "danydodson",
+  "repository": "danydodson/userscript-plus",
+  "author": "Dany <danydodson@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config=build/webpack.config.js && node build/userscript.js",
+    "build": "webpack --config=build/webpack.config.js && webpack --config=build/webpack.gf.config.js && node build/userscript.js",
     "watch": "webpack --watch --config=build/webpack.config.js"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
     "fuzzy.js": "^0.1.0",
     "iview": "2.12.0",
+    "psl": "^1.1.31",
     "timeago.js": "^3.0.2",
     "vue": "^2.4.2",
-    "vue-i18n": "^7.2.0"
+    "vue-i18n": "7.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -35,8 +36,8 @@
   "keywords": [
     "userjs",
     "userscripts",
-    "tampermonkey",
     "greasyfork",
-    "vue"
+    "greasyfork",
+    "tampermonkey"
   ]
 }
