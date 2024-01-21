@@ -78,9 +78,9 @@
 import Tools from '../common/js/tools'
 import Info from './Info.vue'
 import Indicator from './Indicator.vue'
-import Support from './Support.vue'
+// import Support from './Support.vue'
 export default {
-  components: { Info, Indicator, Support },
+  components: { Info, Indicator },
   mounted: function () {
     // let host = location.host.split('.').splice(-2).join('.')
     // let host = 'google.com'

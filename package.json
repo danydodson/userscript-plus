@@ -1,11 +1,9 @@
 {
   "name": "userscript-plus",
-  "version": "2.4.0",
   "description": "Show all UserJS for current site.",
-  "homepage": "https://github.com/danydodson/userscript-plus#readme",
-  "repository": "danydodson/userscript-plus",
-  "author": "Dany <danydodson@gmail.com>",
-  "license": "MIT",
+  "homepage": "https://github.com/danydodson/userscript-plus",
+  "author": "danydodson",
+  "version": "0.0.0",
   "scripts": {
     "build": "webpack --config=build/webpack.config.js && webpack --config=build/webpack.gf.config.js && node build/userscript.js",
     "watch": "webpack --watch --config=build/webpack.config.js"
@@ -36,7 +34,6 @@
   "keywords": [
     "userjs",
     "userscripts",
-    "greasyfork",
     "greasyfork",
     "tampermonkey"
   ]

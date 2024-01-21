@@ -1,10 +1,10 @@
 {
   "name": "userscript-plus",
-  "version": "2.4.0",
   "description": "Show all UserJS for current site.",
-  "homepage": "https://github.com/danydodson/userscript-plus#readme",
-  "repository": "danydodson/userscript-plus",
+  "version": "2.4.0",
   "author": "danydodson",
+  "repository": "danydodson/userscript-plus",
+  "homepage": "https://github.com/danydodson/userscript-plus#readme",
   "license": "MIT",
   "scripts": {
     "build": "webpack",

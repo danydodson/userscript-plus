@@ -1,6 +1,7 @@
 var webpack = require('webpack')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 
+// 
 module.exports = {
   entry: {
     ui: "./src/main.js"
@@ -34,7 +35,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-
-  ]
+  plugins: []
 }

@@ -1,0 +1,32 @@
+{
+  "name": "Userscript Plus",
+  "version": "2.4.0",
+  "manifest_version": 3,
+  "description": "Show all UserJS for current site.",
+  "default_title": "Open UserScript+",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "96": "icons/icon_96.png",
+      "128": "icons/icon_128.png"
+    },
+    "icons": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "96": "icons/icon_96.png",
+      "128": "icons/icon_128.png"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ]
+}

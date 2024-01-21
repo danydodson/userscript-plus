@@ -1,33 +1,33 @@
 // ==UserScript==
-// @name               UserScript: UserScripts Plus
-// @namespace          https://github.com/danydodson/userscript-plus
-// @version            2.4.0
-// @description        Show all UserJS for current site.
-// @author             Nonce
-// @license            MIT
-// @icon               data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3ggEBCQHM3fXsAAAAVdJREFUOMudkz2qwkAUhc/goBaGJBgUtBCZyj0ILkpwAW7Bws4yO3AHLiCtEFD8KVREkoiFxZzX5A2KGfN4F04zMN+ce+5c4LMUgDmANYBnrnV+plBSi+FwyHq9TgA2LQpvCiEiABwMBtzv95RSfoNEHy8DYBzHrNVqVEr9BWKcqNFoxF6vx3a7zc1mYyC73a4MogBg7vs+z+czO50OW60Wt9stK5UKp9Mpj8cjq9WqDTBHnjAdxzGQZrPJw+HA31oulzbAWgLoA0CWZVBKIY5jzGYzdLtdE9DlcrFNrY98zobqOA6TJKHW2jg4nU5sNBpFDp6mhVe5rsvVasUwDHm9Xqm15u12o+/7Hy0gD8KatOd5vN/v1FozTVN6nkchxFuI6hsAAIMg4OPxMJCXdtTbR7JJCMEgCJhlGUlyPB4XfumozInrupxMJpRSRtZlKoNYl+m/6/wDuWAjtPfsQuwAAAAASUVORK5CYII=
-// @include            *
-// @require            https://cdn.jsdelivr.net/gh/danydodson/l.js/userjs/l.userjs.min.js
-// @require            https://cdn.jsdelivr.net/gh/danydodson/l.js@master/lib.js
-// @resource           uiJs https://cdn.jsdelivr.net/gh/danydodson/Userscript-Plus/dist/ui.js?_=1705783256395
-// @resource           ui https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.html?_=1705783256395
-// @resource           count https://greasyfork.org/scripts/by-site.json
-// @grant              GM_xmlhttpRequest
-// @grant              GM_getResourceText
-// @grant              GM_getValue
-// @grant              GM_setValue
-// @grant              unsafeWindow
+// @name           UserScript: UserScripts Plus
+// @description    Show all UserJS for current site.
+// @namespace      https://github.com/danydodson/userscript-plus
+// @author         Nonce
+// @version        2.4.0
+// @license        MIT
+// @icon           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3ggEBCQHM3fXsAAAAVdJREFUOMudkz2qwkAUhc/goBaGJBgUtBCZyj0ILkpwAW7Bws4yO3AHLiCtEFD8KVREkoiFxZzX5A2KGfN4F04zMN+ce+5c4LMUgDmANYBnrnV+plBSi+FwyHq9TgA2LQpvCiEiABwMBtzv95RSfoNEHy8DYBzHrNVqVEr9BWKcqNFoxF6vx3a7zc1mYyC73a4MogBg7vs+z+czO50OW60Wt9stK5UKp9Mpj8cjq9WqDTBHnjAdxzGQZrPJw+HA31oulzbAWgLoA0CWZVBKIY5jzGYzdLtdE9DlcrFNrY98zobqOA6TJKHW2jg4nU5sNBpFDp6mhVe5rsvVasUwDHm9Xqm15u12o+/7Hy0gD8KatOd5vN/v1FozTVN6nkchxFuI6hsAAIMg4OPxMJCXdtTbR7JJCMEgCJhlGUlyPB4XfumozInrupxMJpRSRtZlKoNYl+m/6/wDuWAjtPfsQuwAAAAASUVORK5CYII=
+// @include        *
+// @require        https://cdn.jsdelivr.net/gh/danydodson/l.js/userjs/l.userjs.min.js
+// @require        https://cdn.jsdelivr.net/gh/danydodson/l.js@master/lib.js
+// @resource       uiJs https://cdn.jsdelivr.net/gh/danydodson/Userscript-Plus/dist/ui.js?_=1705848913673
+// @resource       ui https://cdn.jsdelivr.net/gh/danydodson/userscript-plus/dist/ui.html?_=1705848913673
+// @resource       count https://greasyfork.org/scripts/by-site.json
+// @grant          GM_xmlhttpRequest
+// @grant          GM_getResourceText
+// @grant          GM_getValue
+// @grant          GM_setValue
+// @grant          unsafeWindow
+// @connect        cdn.bootcss.com
+// @connect        raw.githubusercontent.com
+// @connect        gist.githubusercontent.com
+// @connect        cdnjs.cloudflare.com
+// @connect        greasyfork.org
+// @connect        cdn.jsdelivr.net
+// @run-at         document-end
 // @noframes
-// @connect            cdn.bootcss.com
-// @connect            raw.githubusercontent.com
-// @connect            gist.githubusercontent.com
-// @connect            cdnjs.cloudflare.com
-// @connect            greasyfork.org
-// @connect            cdn.jsdelivr.net
-// @run-at             document-end
 // ==/UserScript==
 
-unsafeWindow.GmAjax = GM_xmlhttpRequest;
+unsafeWindow.GmAjax = GM_xmlhttpRequest
 
 (function () {
   
@@ -42,7 +42,7 @@ var FetchUserjs = function () {
     _classCallCheck(this, FetchUserjs);
 
     this.host = this.getMainHost();
-    this.showTime = 10;
+    this.showTime = 20;
     this.quietKey = 'jae_fetch_userjs_quiet';
     this.countKey = 'jae_fetch_userjs_count';
     this.tplBox = '<div id="jae_userscript_box"><style>.jae-userscript{position:fixed;width:370px;bottom:10px;right:20px;z-index:9999999999;height:56px}.jae-userscript-shadow{box-shadow:0 1px 4px rgba(0,0,0,.3),\\t\\t\\t\\t0px 0 20px rgba(0,0,0,.1) inset}.jae-userscript-shadow::before,.jae-userscript-shadow::after{content:"";position:absolute;z-index:-1}.jae-userscript-shadow::before,.jae-userscript-shadow::after{content:"";position:absolute;z-index:-1;bottom:15px;left:10px;width:50%;height:20%}.jae-userscript-shadow::before,.jae-userscript-shadow::after{content:"";position:absolute;z-index:-1;bottom:15px;left:10px;width:50%;height:20%;box-shadow:0 15px 10px rgba(0,0,0,.7);transform:rotate(-3deg)}.jae-userscript-shadow::after{right:10px;left:auto;transform:rotate(3deg)}</style><div class="jae-userscript" class=""></div></div>';
